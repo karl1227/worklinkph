@@ -1,23 +1,62 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+// Import screens
+import SplashScreen from './screens/SplashScreen';
+import LoginScreen from './screens/LoginScreen';
+import SignUpScreen from './screens/SignUpScreen';
+import HomeDashboard from './screens/HomeDashboard';
+import FindJobs from './screens/FindJobs';
+import Profile from './screens/Profile';
+import Resources from './screens/Resources';
+
 function App() {
+  const [currentScreen, setCurrentScreen] = useState('splash');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleNavigate = (screen) => {
+    setCurrentScreen(screen);
+  };
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    setCurrentScreen('home');
+  };
+
+  const handleSignUp = () => {
+    setIsLoggedIn(true);
+    setCurrentScreen('home');
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setCurrentScreen('login');
+  };
+
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 'splash':
+        return <SplashScreen onNavigate={handleNavigate} />;
+      case 'login':
+        return <LoginScreen onNavigate={handleNavigate} onLogin={handleLogin} />;
+      case 'signup':
+        return <SignUpScreen onNavigate={handleNavigate} onSignUp={handleSignUp} />;
+      case 'home':
+        return <HomeDashboard onNavigate={handleNavigate} />;
+      case 'findjobs':
+        return <FindJobs onNavigate={handleNavigate} />;
+      case 'profile':
+        return <Profile onNavigate={handleLogout} />;
+      case 'resources':
+        return <Resources onNavigate={handleNavigate} />;
+      default:
+        return <SplashScreen onNavigate={handleNavigate} />;
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {renderScreen()}
     </div>
   );
 }

@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# WorkLink PH - Mobile Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+WorkLink PH is a ReactJS mobile application designed to bridge opportunities for inclusive employment. The app serves Persons with Disabilities (PWDs), Senior Citizens, Youth, and marginalized communities by providing accessible job matching, training resources, and employment support.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🎯 Core Functionality
+- **Inclusive Job Matching**: Find employment opportunities tailored to specific needs and abilities
+- **Resource Directory**: Access comprehensive services and support organizations
+- **Personalized Experience**: Customize profiles for targeted recommendations
+- **Accessibility Features**: Built-in support for screen readers, high contrast mode, and larger text
 
-### `npm start`
+### 📱 Screens
+1. **Splash Screen**: Welcome screen with WorkLink PH branding
+2. **Login Screen**: User authentication with email/phone and password
+3. **Sign Up Screen**: Two-step account creation process with progress indicators
+4. **Home Dashboard**: Main hub with hero section, features, and call-to-action
+5. **Find Jobs**: Job search with filters, search functionality, and job listings
+6. **Profile**: Personal information, preferences, and accessibility settings
+7. **Resources**: Directory of employment resources, training, and legal information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎨 Design Features
+- **Mobile-First Design**: Optimized for mobile devices
+- **Accessibility**: WCAG compliant with screen reader support
+- **Responsive Layout**: Adapts to different screen sizes
+- **Modern UI**: Clean, professional interface with intuitive navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Target Beneficiaries
 
-### `npm test`
+### 👥 Who We Serve
+- **Persons with Disabilities (PWDs)**: Accessible job listings with inclusive employers
+- **Senior Citizens**: Flexible work opportunities suited to experience and lifestyle
+- **Youth**: Entry-level positions, internships, and career-building programs
+- **Marginalized Groups**: Sustainable opportunities for underserved communities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Stack
 
-### `npm run build`
+### 🛠️ Technologies Used
+- **React 19.2.0**: Modern React with hooks and functional components
+- **React Router DOM 6.8.0**: Client-side routing for navigation
+- **CSS3**: Custom styling with mobile-first responsive design
+- **JavaScript ES6+**: Modern JavaScript features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📁 Project Structure
+```
+src/
+├── screens/
+│   ├── SplashScreen.js & .css
+│   ├── LoginScreen.js & .css
+│   ├── SignUpScreen.js & .css
+│   ├── HomeDashboard.js & .css
+│   ├── FindJobs.js & .css
+│   ├── Profile.js & .css
+│   └── Resources.js & .css
+├── App.js
+├── App.css
+└── index.css
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🚀 Installation
+1. Navigate to the project directory:
+   ```bash
+   cd worklinkph
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) to view the app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🏗️ Building for Production
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Key Features Implementation
 
-## Learn More
+### 🔐 Authentication Flow
+- Splash screen with auto-navigation to login
+- Two-step signup process with progress tracking
+- Form validation and user feedback
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🎯 Job Search & Matching
+- Real-time search functionality
+- Filter by job type, location, and target groups
+- Interactive job cards with detailed information
+- Tag-based filtering system
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 👤 Profile Management
+- Comprehensive personal information forms
+- Job preference settings
+- Accessibility customization options
+- Notification preferences
 
-### Code Splitting
+### 📚 Resource Directory
+- Categorized resource listings
+- Search and filter functionality
+- External link integration
+- Organization and contact information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Accessibility Features
 
-### Analyzing the Bundle Size
+### ♿ Inclusive Design
+- **Screen Reader Support**: Proper ARIA labels and semantic HTML
+- **High Contrast Mode**: Enhanced visibility options
+- **Large Text Support**: Scalable font sizes
+- **Keyboard Navigation**: Full keyboard accessibility
+- **Focus Management**: Clear focus indicators
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🎨 Visual Design
+- **Color Contrast**: WCAG AA compliant color schemes
+- **Typography**: Readable fonts with appropriate sizing
+- **Spacing**: Adequate touch targets for mobile devices
+- **Icons**: Meaningful icons with text alternatives
 
-### Making a Progressive Web App
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🔮 Planned Features
+- **Backend Integration**: Real API connections for job data
+- **Push Notifications**: Real-time job alerts
+- **Offline Support**: PWA capabilities
+- **Multi-language Support**: Filipino and English
+- **Advanced Matching**: AI-powered job recommendations
+- **Training Modules**: Integrated learning platform
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🤝 Development Guidelines
+- Follow React best practices
+- Maintain accessibility standards
+- Use semantic HTML
+- Write clean, documented code
+- Test on multiple devices
 
-### Deployment
+## License
+This project is developed for educational and social impact purposes, focusing on inclusive employment opportunities in the Philippines.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+**Made with ❤️ for inclusivity**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*WorkLink PH - Bridging Opportunities for Inclusive Employment*
