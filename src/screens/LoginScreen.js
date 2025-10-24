@@ -11,19 +11,11 @@ const LoginScreen = ({ onNavigate, onLogin }) => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     
-    // Special handling for phone number - only allow digits and limit to 11 characters
-    if (name === 'emailOrPhone' && /^[0-9]*$/.test(value)) {
-      const phoneValue = value.slice(0, 11);
-      setFormData(prev => ({
-        ...prev,
-        [name]: phoneValue
-      }));
-    } else {
-      setFormData(prev => ({
-        ...prev,
-        [name]: value
-      }));
-    }
+    // Allow any input for email/phone field - validation will be handled on submit
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   const handleLogin = (e) => {
@@ -58,8 +50,6 @@ const LoginScreen = ({ onNavigate, onLogin }) => {
               value={formData.emailOrPhone}
               onChange={handleInputChange}
               placeholder="Enter your email or phone number"
-              maxLength="11"
-              pattern="[0-9]{11}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               required
             />
           </div>

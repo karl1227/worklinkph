@@ -89,16 +89,16 @@
   box-shadow: none;
 }
 
-/* Phone number input styling */
-.form-group input[pattern]:invalid:not(:focus) {
+/* Input validation styling */
+.form-group input:invalid:not(:focus) {
   border-color: #d1d5db;
 }
 
-.form-group input[pattern]:invalid:focus {
+.form-group input:invalid:focus {
   border-color: #ef4444;
 }
 
-.form-group input[pattern]:valid {
+.form-group input:valid {
   border-color: #10b981;
 }
 
