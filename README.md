@@ -42,6 +42,22 @@ WorkLink PH is a ReactJS mobile application designed to bridge opportunities for
 - **CSS3**: Custom styling with mobile-first responsive design
 - **JavaScript ES6+**: Modern JavaScript features
 
+### 📦 Dependencies
+```json
+{
+  "react": "^19.2.0",
+  "react-dom": "^19.2.0", 
+  "react-router-dom": "^6.8.0",
+  "react-scripts": "5.0.1",
+  "web-vitals": "^2.1.4"
+}
+```
+
+#### Development Dependencies
+- **@testing-library/react**: Testing utilities for React components
+- **@testing-library/jest-dom**: Custom Jest matchers for DOM elements
+- **@testing-library/user-event**: User interaction simulation for tests
+
 ### 📁 Project Structure
 ```
 src/
@@ -60,28 +76,72 @@ src/
 
 ## Getting Started
 
-### 🚀 Installation
-1. Navigate to the project directory:
+### 📋 Prerequisites
+Before running this project, make sure you have the following installed on your computer:
+
+- **Node.js** (version 14.0 or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn** package manager
+- **Git** (for version control) - [Download here](https://git-scm.com/)
+
+### 🚀 Installation & Setup
+
+#### Option 1: Clone from GitHub
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/worklinkph.git
+   cd worklinkph
+   ```
+
+#### Option 2: Download and Extract
+1. Download the project files
+2. Extract to your desired location
+3. Navigate to the project directory:
    ```bash
    cd worklinkph
    ```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+#### Install Dependencies
+```bash
+npm install
+```
 
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+#### Start Development Server
+```bash
+npm start
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app
+The application will open automatically in your browser at [http://localhost:3000](http://localhost:3000)
 
 ### 🏗️ Building for Production
 ```bash
 npm run build
 ```
+This creates a `build` folder with optimized production files.
+
+### 🧪 Running Tests
+```bash
+npm test
+```
+
+### 📦 Available Scripts
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+### 🔧 Troubleshooting
+
+#### Common Issues:
+1. **Port 3000 already in use**: The app will automatically suggest using a different port
+2. **Node modules issues**: Delete `node_modules` folder and run `npm install` again
+3. **Permission errors**: Run terminal as administrator (Windows) or use `sudo` (Mac/Linux)
+
+#### System Requirements:
+- **Windows**: Windows 10 or later
+- **macOS**: macOS 10.14 or later  
+- **Linux**: Ubuntu 18.04+ or equivalent
+- **RAM**: Minimum 4GB recommended
+- **Storage**: At least 1GB free space
 
 ## Key Features Implementation
 
@@ -122,6 +182,42 @@ npm run build
 - **Typography**: Readable fonts with appropriate sizing
 - **Spacing**: Adequate touch targets for mobile devices
 - **Icons**: Meaningful icons with text alternatives
+
+## Deployment
+
+### 🌐 Deploy to GitHub Pages
+1. Install gh-pages package:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. Add homepage to package.json:
+   ```json
+   "homepage": "https://yourusername.github.io/worklinkph"
+   ```
+
+3. Add deploy scripts to package.json:
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+
+4. Deploy:
+   ```bash
+   npm run deploy
+   ```
+
+### 🚀 Deploy to Netlify
+1. Build the project: `npm run build`
+2. Drag and drop the `build` folder to [Netlify](https://netlify.com)
+3. Or connect your GitHub repository for automatic deployments
+
+### ☁️ Deploy to Vercel
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run: `vercel` in your project directory
+3. Follow the prompts
 
 ## Future Enhancements
 
