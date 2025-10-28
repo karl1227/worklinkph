@@ -55,8 +55,10 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {renderScreen()}
+    <div className="app-shell">
+      <div className="app-container">
+        {renderScreen()}
+      </div>
     </div>
   );
 }

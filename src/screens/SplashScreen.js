@@ -3,10 +3,10 @@ import './SplashScreen.css';
 
 const SplashScreen = ({ onNavigate }) => {
   useEffect(() => {
-    // Auto navigate to login after 3 seconds
+    // Auto navigate to login after 1 second
     const timer = setTimeout(() => {
       onNavigate('login');
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [onNavigate]);
