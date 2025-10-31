@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/worklinkph/static/css/main.6aaf01d6.css",
+    "main.js": "/worklinkph/static/js/main.94911e14.js",
+    "static/js/453.9833e91d.chunk.js": "/worklinkph/static/js/453.9833e91d.chunk.js",
+    "index.html": "/worklinkph/index.html",
+    "main.6aaf01d6.css.map": "/worklinkph/static/css/main.6aaf01d6.css.map",
+    "main.94911e14.js.map": "/worklinkph/static/js/main.94911e14.js.map",
+    "453.9833e91d.chunk.js.map": "/worklinkph/static/js/453.9833e91d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6aaf01d6.css",
+    "static/js/main.94911e14.js"
+  ]
+}
