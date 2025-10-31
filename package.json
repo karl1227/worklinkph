@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "description": "WorkLink PH - Bridging Opportunities for Inclusive Employment",
   "private": true,
-  "keywords": ["react", "mobile", "accessibility", "employment", "inclusive", "philippines"],
+  "keywords": [
+    "react",
+    "mobile",
+    "accessibility",
+    "employment",
+    "inclusive",
+    "philippines"
+  ],
   "author": "WorkLink PH Team",
-  "homepage": ".",
+  "homepage": "https://karl1227.github.io/worklinkph",
+
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -21,7 +29,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
